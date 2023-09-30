@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dd23fca3-35d5-4ad2-9817-651f0b3433f9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/junit/ScribeDisplayNameGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/junit/ScribeDynamicTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/junit/ScribeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/junit/ScribeTestDescriptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/junit/StylusConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/junit/StylusTestEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/junit/StylusTestExecutionListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/junit/TestFinishedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/junit/TestPlanFinishedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/junit/TestPlanStartedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/junit/TestRegisteredEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/junit/TestSkippedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/junit/TestStartedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/runner/MarkdownReportWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/runner/ScenarioRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/runner/ScribeRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/runner/ScribeRunnerDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/runner/ScribeTestPlanReportScenarioSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/runner/ScribeTestPlanReportSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/runner/ScribeTestPlanReportStepSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/runner/ScribeTestPlanRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/runner/ScribeTestPlanScenarioRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/runner/ScribeTestPlanStepRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/runner/StepRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/service/RemoteTestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/service/ScribeTestPlanReportStreamer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/service/ScribeTestPlanSetStreamer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/util/DatasetUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/util/ScribeProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miriya/miri/scribe/client/util/ScribeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/PubTestService.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/services/org.junit.platform.engine.TestEngine" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/services/org.junit.platform.launcher.TestExecutionListener" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/scribe.config.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2W6TcLaIhS6QtdkXRTxyBZTLf9b" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Eric/IdeaProjects/yascribe-client/src/main/java/com/miriya/miri/scribe/client/service"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Eric\IdeaProjects\yascribe-client\src\main\java\com\miriya\miri\scribe\client\service" />
+      <recent name="C:\Users\Eric\IdeaProjects\yascribe-client\src\main\java\com\miriya\miri\scribe\client" />
+      <recent name="C:\Users\Eric\IdeaProjects\yascribe-client\src\main\java\com\miriya\miri\scribe\client\runner" />
+      <recent name="C:\Users\Eric\IdeaProjects\yascribe-client\src\main" />
+      <recent name="C:\Users\Eric\IdeaProjects\yascribe-client\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Eric\IdeaProjects\yascribe-client\src\main\resources\META-INF" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd23fca3-35d5-4ad2-9817-651f0b3433f9" name="Changes" comment="" />
+      <created>1696052110407</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696052110407</updated>
+    </task>
+    <servers />
+  </component>
+</project>

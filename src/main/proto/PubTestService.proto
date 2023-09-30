@@ -1,0 +1,67 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package com.miriya.miri.scribe.grpc;
+
+import "google/protobuf/duration.proto";
+import "google/protobuf/timestamp.proto";
+
+// The scribe environment (language, context, library)
+message ScribeEnv {
+  string language = 1;
+  string context = 2;
+  string library = 3;
+}
+
+message ScribeTestConfig {
+  // test report type: 0 = json only, 1 = markdown only, 2 = json & markdown
+  uint32 reportType = 1;
+  string browser = 2;
+  repeated string options = 3;
+}
+
+message ScribeTestPlanRequest {
+  string scribe = 1;
+  string dataset = 2;
+  ScribeEnv scribeEnv = 3;
+  ScribeTestConfig testConfig = 4;
+}
+
+message ScribeTestPlanReportRequest {
+  string testPlanUuid = 1;
+}
+
+message RemoteScribeTestPlan {
+  string testPlanUuid = 1;
+  string nodeHost = 2;
+  uint32 nodePort = 3;
+}
+
+message ScribeTestPlanReport {
+  string testPlanUuid = 1;
+  string scribe = 2;
+  google.protobuf.Timestamp date = 3;
+  repeated ScribeTestPlanReportScenario scenarios = 4;
+  string browser = 5;
+}
+
+message ScribeTestPlanReportScenario {
+  string uuid = 1;
+  string scenario = 2;
+  repeated ScribeTestPlanReportStep steps = 3;
+}
+
+message ScribeTestPlanReportStep {
+  string uuid = 1;
+  string step = 2;
+  google.protobuf.Duration duration = 3;
+  string status = 4;
+  string reason = 5;
+}
+
+service ScribeRemoteTestService {
+  rpc executeTestPlan(ScribeTestPlanRequest) returns (stream RemoteScribeTestPlan);
+}
+
+service ScribeNodeTestService {
+  rpc streamTestPlanReport(ScribeTestPlanReportRequest) returns (stream ScribeTestPlanReport);
+}
