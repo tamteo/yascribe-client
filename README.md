@@ -38,7 +38,7 @@ com.miriya.miri.scribe.report-dir=yascribe/reports
 
 ## Test configuration
 # Browser name: Chrome, Firefox, Edge, for example
-com.miriya.miri.scribe.stylus.browser-name=Chrome
+com.miriya.miri.scribe.browser-name=Chrome
 ```
 
 Replace `localhost` and `9090` by yascribe server name and port.<br>
@@ -50,7 +50,7 @@ For the evaluation server of yascribe host name and port are :
 
 `com.miriya.miri.scribe.report-dir` is the folder where test reports will be generated.
 
-`com.miriya.miri.scribe.stylus.browser-name` : specify one or several browsers to run tests.<br>
+`com.miriya.miri.scribe.browser-name` : specify one or several browsers to run tests.<br>
 In the case of multi-browsers, use a `,` as separator character.<br>
 If using the evaluation server then only Chrome, Firefox and Edge are available.
 

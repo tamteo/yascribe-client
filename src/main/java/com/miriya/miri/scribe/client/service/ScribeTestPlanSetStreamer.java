@@ -23,6 +23,7 @@ public class ScribeTestPlanSetStreamer implements StreamObserver<RemoteScribeTes
     private final File datasetFile;
 
     private final CountDownLatch countDownLatch = new CountDownLatch(1);
+    private Throwable error;
 
     public ScribeTestPlanSetStreamer(File scribeFile, File datasetFile) {
         this.scribeFile = scribeFile;
@@ -39,6 +40,7 @@ public class ScribeTestPlanSetStreamer implements StreamObserver<RemoteScribeTes
 
     @Override
     public void onError(Throwable t) {
+        error = t;
         countDownLatch.countDown();
     }
 
@@ -55,6 +57,8 @@ public class ScribeTestPlanSetStreamer implements StreamObserver<RemoteScribeTes
         try {
             countDownLatch.await();
         } catch (InterruptedException e) {}
+
+        if (error != null) throw new RuntimeException(error.getMessage());
 
         return streamers.stream()
                 .map(ScribeTestPlanReportStreamer::getTestPlanDynamicNode)

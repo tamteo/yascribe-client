@@ -67,7 +67,7 @@ public class ScribeProperties {
      *  - Safari
      * </pre>
      */
-    public static final String BROWSER_NAME = "com.miriya.miri.scribe.stylus.browser-name";
+    public static final String BROWSER_NAME = "com.miriya.miri.scribe.browser-name";
     /**
      * the default browser name
      */
